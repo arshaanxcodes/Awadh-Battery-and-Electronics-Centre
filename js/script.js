@@ -1,5 +1,9 @@
-function showMessage() {
-    alert("Welcome to Awadh Battery and Electronic Centre!");
+function goToServices() {
+    window.location.href = "services.html";
+}
+
+function goToContact() {
+    window.location.href = "contact.html";
 }
 
 function validateForm() {
@@ -8,7 +12,7 @@ function validateForm() {
     let message = document.getElementById("message").value;
 
     if (name === "" || email === "" || message === "") {
-        alert("Please fill all fields!");
+        alert("Please fill all fields");
         return false;
     }
 
