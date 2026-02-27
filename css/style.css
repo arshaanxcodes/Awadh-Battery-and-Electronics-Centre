@@ -1,72 +1,108 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+    background: #fff;
 }
 
 header {
-    background-color: #c40000;
+    background: #c40000;
     color: white;
-    padding: 15px;
     text-align: center;
+    padding: 15px;
 }
 
 nav a {
     color: white;
-    margin: 0 12px;
+    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
 .hero {
-    padding: 60px;
     text-align: center;
-    background-color: #f8f8f8;
+    padding: 40px;
 }
 
-.hero button {
-    background-color: #c40000;
+.main-img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+.btn {
+    background: #c40000;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 25px;
     border: none;
+    border-radius: 25px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.hero button:hover {
-    background-color: #900000;
+.btn:hover {
+    background: #900000;
+    transform: scale(1.1);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-section {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-section img {
+    width: 300px;
+    border-radius: 10px;
 }
 
 .content {
     padding: 40px;
-}
-
-.services li {
-    font-size: 18px;
-    margin: 10px 0;
+    text-align: center;
 }
 
 form input, form textarea {
-    width: 100%;
+    width: 80%;
     padding: 10px;
-    margin: 8px 0;
-}
-
-form button {
-    background-color: #c40000;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+    margin: 10px 0;
 }
 
 footer {
-    background-color: #c40000;
+    background: #c40000;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+.fade-in {
+    animation: fade 1.5s ease-in;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
