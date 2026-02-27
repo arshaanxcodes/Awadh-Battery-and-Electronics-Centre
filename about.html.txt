@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Awadh Battery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>About Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>Who We Are</h2>
+    <p>
+        Awadh Battery and Electronic Centre is a trusted name in batteries and electronic products.
+        We provide high-quality inverter batteries, automotive batteries, and electronic accessories.
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>
+        To deliver reliable electronic solutions with excellent customer service at the best price.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Awadh Battery and Electronic Centre</p>
+</footer>
+
+</body>
+</html>

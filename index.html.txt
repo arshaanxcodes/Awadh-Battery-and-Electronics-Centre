@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awadh Battery and Electronic Centre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Awadh Battery & Electronic Centre</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Your Trusted Battery & Electronics Store</h2>
+    <p>Quality Products | Affordable Prices | Reliable Service</p>
+    <button onclick="showMessage()">Explore More</button>
+</section>
+
+<footer>
+    <p>© 2026 Awadh Battery and Electronic Centre. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
