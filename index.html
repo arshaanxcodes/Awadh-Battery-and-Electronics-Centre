@@ -8,9 +8,17 @@
 </head>
 <body>
 
+<!-- TOP BAR -->
+<div class="top-bar">
+    <p>Reliable Batteries • Inverters • Electronics</p>
+</div>
+
 <!-- HEADER -->
 <header class="header">
-    <div class="logo">Awadh Battery & Electronic Centre</div>
+    <div class="brand">
+        <h1>Awadh Battery</h1>
+        <span>& Electronic Centre</span>
+    </div>
     <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
@@ -21,48 +29,59 @@
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-text">
-        <h1>Powering Your Life</h1>
-        <p>Batteries • Inverters • Electronics • Reliable Service</p>
-        <button class="btn" onclick="goToServices()">View Services</button>
+    <div class="hero-content">
+        <h2>Power Solutions You Can Trust</h2>
+        <p>
+            Quality batteries, inverters, and electronic products  
+            backed by reliable service and expert support.
+        </p>
+        <div class="hero-buttons">
+            <button class="btn primary" onclick="goToServices()">Our Services</button>
+            <button class="btn outline" onclick="goToContact()">Contact Us</button>
+        </div>
     </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features">
-    <h2>What We Offer</h2>
+<!-- SERVICES PREVIEW -->
+<section class="section">
+    <h2 class="section-title">Our Core Offerings</h2>
 
-    <div class="feature-grid">
-        <div class="feature-card">
-            <img src="images/battery.jpg">
+    <div class="cards">
+        <div class="card">
+            <img src="images/battery.jpg" alt="Battery">
             <h3>Batteries</h3>
-            <p>Car, bike and inverter batteries with warranty.</p>
+            <p>Automotive and inverter batteries with warranty and long life.</p>
         </div>
 
-        <div class="feature-card">
-            <img src="images/inverter.jpg">
-            <h3>Inverters</h3>
-            <p>UPS and power backup solutions.</p>
+        <div class="card">
+            <img src="images/inverter.jpg" alt="Inverter">
+            <h3>Inverters & UPS</h3>
+            <p>Reliable power backup solutions for homes and businesses.</p>
         </div>
 
-        <div class="feature-card">
-            <img src="images/electronics.jpg">
+        <div class="card">
+            <img src="images/electronics.jpg" alt="Electronics">
             <h3>Electronics</h3>
-            <p>Quality electronic accessories.</p>
+            <p>High-quality electronic accessories and components.</p>
         </div>
     </div>
 </section>
 
-<!-- CALL TO ACTION -->
-<section class="cta">
-    <h2>Need Reliable Power Solutions?</h2>
-    <p>Visit or contact Awadh Battery and Electronic Centre today.</p>
-    <button class="btn" onclick="goToContact()">Contact Us</button>
+<!-- TRUST SECTION -->
+<section class="trust">
+    <div class="trust-box">
+        <h2>Why Choose Us?</h2>
+        <p>
+            We focus on quality products, honest pricing, and dependable service.
+            Our goal is long-term customer satisfaction.
+        </p>
+        <button class="btn primary" onclick="goToContact()">Get in Touch</button>
+    </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-    <p>© 2026 Awadh Battery and Electronic Centre</p>
+<footer class="footer">
+    <p>© 2026 Awadh Battery and Electronic Centre. All Rights Reserved.</p>
 </footer>
 
 </body>
