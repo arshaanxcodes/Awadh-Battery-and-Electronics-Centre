@@ -7,25 +7,25 @@
 
 /* Top Bar */
 .top-bar {
-    background: #0f172a;
+    background: linear-gradient(90deg, #ef233c, #fca311);
     color: #ffffff;
     text-align: center;
-    padding: 8px 12px;
+    padding: 9px 12px;
     font-size: 14px;
+    font-weight: 600;
 }
 
 /* Navbar */
 .navbar {
-    background: #ffffff;
+    background: #0b132b;
     padding: 16px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
 
 .navbar h1 {
-    color: #0f172a;
+    color: #ffffff;
     font-size: 22px;
     font-weight: 700;
 }
@@ -33,68 +33,81 @@
 .navbar nav a {
     margin-left: 22px;
     text-decoration: none;
-    color: #1f2937;
+    color: #e5e7eb;
     font-weight: 500;
+    position: relative;
 }
 
-.navbar nav a:hover {
-    color: #f97316;
+.navbar nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fca311;
+    transition: width 0.3s;
+}
+
+.navbar nav a:hover::after {
+    width: 100%;
 }
 
 /* Hero */
 .hero {
     background: linear-gradient(
-        rgba(15,23,42,0.75),
-        rgba(15,23,42,0.75)
+        rgba(11,19,43,0.85),
+        rgba(11,19,43,0.85)
     ),
     url("../images/shop.jpg") center/cover no-repeat;
-    min-height: 58vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 40px 20px;
 }
 
 .hero h2 {
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 12px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 22px;
-    color: #e5e7eb;
+    margin-bottom: 25px;
+    color: #f8f9fa;
 }
 
 .btn {
     display: inline-block;
-    padding: 13px 30px;
-    background: #f97316;
-    color: white;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #ef233c, #fca311);
+    color: #ffffff;
     text-decoration: none;
     border-radius: 30px;
-    font-weight: 600;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.2s;
 }
 
 .btn:hover {
-    background: #ea580c;
+    transform: translateY(-2px);
 }
 
 /* Sections */
 .section {
-    padding: 50px 60px;
-    background: #f8fafc;
+    padding: 55px 60px;
+    background: #f8f9fa;
     text-align: center;
 }
 
 .section h2 {
     margin-bottom: 35px;
-    font-size: 30px;
-    color: #0f172a;
-    font-weight: 700;
+    font-size: 32px;
+    color: #0b132b;
+    font-weight: 800;
 }
 
 /* Cards */
@@ -105,101 +118,69 @@
 }
 
 .card {
-    background: white;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 14px;
-    margin-bottom: 18px;
 }
 
 .card h3 {
-    color: #f97316;
+    color: #ef233c;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
 .card p {
     color: #374151;
-    font-size: 15px;
 }
 
 /* Footer */
 footer {
-    background: #0f172a;
-    color: #cbd5f5;
+    background: #0b132b;
+    color: #e5e7eb;
     text-align: center;
-    padding: 22px;
-    font-size: 14px;
+    padding: 24px;
 }
-/* Mobile Optimization */
-@media (max-width: 768px) {
 
-    .navbar {
-        flex-direction: column;
-        padding: 15px 20px;
-        text-align: center;
-    }
-
-    .navbar nav {
-        margin-top: 10px;
-    }
-
-    .navbar nav a {
-        margin: 0 10px;
-        display: inline-block;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .section {
-        padding: 35px 20px;
-    }
-
-    iframe {
-        height: 260px;
-    }
-}
 /* Sticky Call Button */
 .sticky-call {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #f97316;
-    color: #ffffff;
-    padding: 14px 20px;
+    background: linear-gradient(135deg, #ef233c, #fca311);
+    color: white;
+    padding: 15px 22px;
     border-radius: 50px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
     z-index: 9999;
 }
 
-/* Hover effect (desktop only) */
-.sticky-call:hover {
-    background: #ea580c;
-}
-
-/* Show only on mobile */
 @media (min-width: 769px) {
     .sticky-call {
         display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    iframe {
+        height: 260px;
     }
 }
