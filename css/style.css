@@ -57,7 +57,7 @@ body {
    HERO WITH SHOP BACKGROUND
 ======================= */
 .hero {
-    background: url("../images/shop-bg.jpg") center/cover no-repeat;
+    background: url("../images/shop.jpg") center/cover no-repeat;
     height: 85vh;
     position: relative;
 }
@@ -282,4 +282,5 @@ footer {
         display: none;
     }
 }
+
 
