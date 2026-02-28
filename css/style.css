@@ -1,261 +1,108 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Top Bar */
 .top-bar {
-    background: linear-gradient(90deg, #ef233c, #fca311);
-    color: #ffffff;
+    background: #111;
+    color: #fff;
     text-align: center;
-    padding: 9px 12px;
+    padding: 8px;
     font-size: 14px;
-    font-weight: 600;
 }
 
 /* Navbar */
 .navbar {
-    background: #0b132b;
-    padding: 16px 45px;
+    background: #ffffff;
+    padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .navbar h1 {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    color: #c40000;
 }
 
 .navbar nav a {
-    margin-left: 22px;
+    margin-left: 15px;
     text-decoration: none;
-    color: #e5e7eb;
-    font-weight: 500;
-    position: relative;
+    color: #333;
+    font-weight: 600;
 }
 
-.navbar nav a::after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #fca311;
-    transition: width 0.3s;
-}
-
-.navbar nav a:hover::after {
-    width: 100%;
+.navbar nav a:hover {
+    color: #c40000;
 }
 
 /* Hero */
 .hero {
-    background: linear-gradient(
-        rgba(11,19,43,0.85),
-        rgba(11,19,43,0.85)
-    ),
-    url("../images/shop.jpg") center/cover no-repeat;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    background: linear-gradient(to right, #c40000, #ff3b3b);
     color: white;
+    padding: 70px 20px;
+    text-align: center;
 }
 
 .hero h2 {
-    font-size: 42px;
-    margin-bottom: 12px;
-    font-weight: 800;
+    font-size: 34px;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 18px;
     margin-bottom: 25px;
-    color: #f8f9fa;
 }
 
 .btn {
-    display: inline-block;
-    padding: 14px 32px;
-    background: linear-gradient(135deg, #ef233c, #fca311);
-    color: #ffffff;
-    text-decoration: none;
+    background: white;
+    color: #c40000;
+    padding: 12px 25px;
     border-radius: 30px;
-    font-weight: 700;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    transition: transform 0.2s;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.btn:hover {
-    transform: translateY(-2px);
-}
-
-/* Sections */
+/* Section */
 .section {
-    padding: 55px 60px;
-    background: #f8f9fa;
-    text-align: center;
+    padding: 60px 20px;
 }
 
 .section h2 {
-    margin-bottom: 35px;
-    font-size: 32px;
-    color: #0b132b;
-    font-weight: 800;
-}
-
-/* Cards */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 28px;
-}
-
-.card {
-    background: #ffffff;
-    padding: 26px;
-    border-radius: 18px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card h3 {
-    color: #ef233c;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.card p {
-    color: #374151;
-}
-
-/* Footer */
-footer {
-    background: #0b132b;
-    color: #e5e7eb;
     text-align: center;
-    padding: 24px;
-}
-
-/* Sticky Call Button */
-.sticky-call {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: linear-gradient(135deg, #ef233c, #fca311);
-    color: white;
-    padding: 15px 22px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
-    z-index: 9999;
-}
-
-@media (min-width: 769px) {
-    .sticky-call {
-        display: none;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 15px 20px;
-    }
-
-    .hero h2 {
-        font-size: 30px;
-    }
-
-    iframe {
-        height: 260px;
-    }
-}
-
-/* Offerings Section Fix */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-}
-
-.card {
-    background: #ffffff;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}
-
-.card img {
-    width: 100%;
-    height: 200px;          /* 🔑 FIX */
-    object-fit: cover;      /* 🔑 FIX */
-    display: block;         /* 🔑 FIX */
-}
-
-.card h3 {
-    margin: 15px 0 10px;
+    margin-bottom: 40px;
+    font-size: 28px;
     color: #222;
 }
 
-.card p {
-    padding: 0 15px 20px;
-    color: #555;
-    font-size: 15px;
-}
-
-/* Mobile safety */
-@media (max-width: 600px) {
-    .card img {
-        height: 180px;
-    }
-}
-/* ===== FIX OFFERINGS CARD LAYOUT ===== */
-
+/* Cards Layout FIX */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     max-width: 1200px;
     margin: auto;
-    padding: 20px;
 }
 
 .card {
-    background: #ffffff;
+    background: #fff;
     border-radius: 18px;
-    overflow: hidden; /* 🔑 VERY IMPORTANT */
+    overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-    display: flex;            /* 🔑 FIX */
-    flex-direction: column;   /* 🔑 FIX */
+    display: flex;
+    flex-direction: column;
 }
 
 .card img {
     width: 100%;
-    height: 220px;            /* 🔑 CONTROL IMAGE */
-    object-fit: cover;        /* 🔑 PREVENT STRETCH */
+    height: 220px;
+    object-fit: cover;
     display: block;
 }
 
@@ -263,20 +110,50 @@ footer {
     margin: 18px 0 8px;
     text-align: center;
     color: #c40000;
-    font-size: 20px;
 }
 
 .card p {
     padding: 0 20px 25px;
     text-align: center;
     color: #555;
-    font-size: 15px;
     line-height: 1.6;
-    flex-grow: 1;             /* 🔑 EQUAL HEIGHT FIX */
+    flex-grow: 1;
 }
 
-/* Mobile fix */
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Sticky Call Button */
+.sticky-call {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #c40000;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Hide call button on desktop */
+@media (min-width: 768px) {
+    .sticky-call {
+        display: none;
+    }
+}
+
+/* Mobile adjustments */
 @media (max-width: 600px) {
+    .hero h2 {
+        font-size: 26px;
+    }
     .card img {
         height: 190px;
     }
