@@ -54,33 +54,67 @@ body {
 }
 
 /* =======================
-   HERO SECTION
+   HERO WITH SHOP BACKGROUND
 ======================= */
 .hero {
-    background: linear-gradient(to right, #c40000, #ff3b3b);
-    color: white;
-    padding: 70px 20px;
+    background: url("../images/shop-bg.jpg") center/cover no-repeat;
+    height: 85vh;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
-.hero h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
+.hero-content {
+    color: #fff;
+    max-width: 800px;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 25px;
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Button */
 .btn {
-    background: white;
-    color: #c40000;
-    padding: 12px 25px;
+    background: #c40000;
+    color: #fff;
+    padding: 14px 30px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff3b3b;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
 }
 
 /* =======================
@@ -248,33 +282,4 @@ footer {
         display: none;
     }
 }
-/* =======================
-   SHOP IMAGE SECTION
-======================= */
-.shop-section {
-    background: #f9f9f9;
-}
 
-.shop-image-box {
-    max-width: 900px;
-    margin: 0 auto 25px;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.shop-image-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.shop-text {
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-    color: #555;
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 0 15px;
-}
