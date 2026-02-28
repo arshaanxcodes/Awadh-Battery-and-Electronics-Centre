@@ -176,3 +176,30 @@ footer {
         height: 260px;
     }
 }
+/* Sticky Call Button */
+.sticky-call {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f97316;
+    color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 9999;
+}
+
+/* Hover effect (desktop only) */
+.sticky-call:hover {
+    background: #ea580c;
+}
+
+/* Show only on mobile */
+@media (min-width: 769px) {
+    .sticky-call {
+        display: none;
+    }
+}
