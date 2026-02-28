@@ -217,3 +217,34 @@ footer {
         text-align: center;
     }
 }
+/* =======================
+   WHATSAPP FLOAT BUTTON
+======================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 90px; /* above call button */
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    background: #25D366;
+    color: white;
+    font-size: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 56px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Hide WhatsApp on desktop if you want */
+@media (min-width: 768px) {
+    .whatsapp-float {
+        display: none;
+    }
+}
