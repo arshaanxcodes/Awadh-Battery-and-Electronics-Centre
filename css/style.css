@@ -1,164 +1,65 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us – Awadh Battery & Electronics Centre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-/* Top Bar */
-.top-bar {
-    background: #111;
-    color: #fff;
-    text-align: center;
-    padding: 8px;
-    font-size: 14px;
-}
+<!-- Top Bar -->
+<div class="top-bar">
+    📞 +91 8130596101 | ⚡ Trusted Power Solutions
+</div>
 
-/* Navbar */
-.navbar {
-    background: #ffffff;
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
+<!-- Navbar -->
+<header class="navbar">
+    <h1>Awadh Battery & Electronics Centre</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-.navbar h1 {
-    font-size: 20px;
-    color: #c40000;
-}
+<!-- Contact Section -->
+<section class="section">
+    <h2>Find Us on Google Maps</h2>
 
-.navbar nav a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-}
+    <!-- Google Map -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Awadh+Battery+and+Electronics+Centre+Lucknow&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
 
-.navbar nav a:hover {
-    color: #c40000;
-}
+    <!-- Get Directions Button -->
+    <div class="map-actions">
+        <a 
+          href="https://www.google.com/maps/dir/?api=1&destination=Awadh+Battery+and+Electronics+Centre+Lucknow"
+          target="_blank">
+            📍 Get Directions
+        </a>
+    </div>
+</section>
 
-/* Hero */
-.hero {
-    background: linear-gradient(to right, #c40000, #ff3b3b);
-    color: white;
-    padding: 70px 20px;
-    text-align: center;
-}
+<!-- Footer -->
+<footer>
+    <p>© 2026 Awadh Battery and Electronics Centre</p>
+    <p>All Rights Reserved</p>
+</footer>
 
-.hero h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
-}
+<!-- Sticky Call Button (Mobile only) -->
+<a href="tel:+918130596101" class="sticky-call">
+    📞 Call Now
+</a>
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-
-.btn {
-    background: white;
-    color: #c40000;
-    padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Section */
-.section {
-    padding: 60px 20px;
-}
-
-.section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 28px;
-    color: #222;
-}
-
-/* Cards Layout FIX */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.card {
-    background: #fff;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-    display: flex;
-    flex-direction: column;
-}
-
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-}
-
-.card h3 {
-    margin: 18px 0 8px;
-    text-align: center;
-    color: #c40000;
-}
-
-.card p {
-    padding: 0 20px 25px;
-    text-align: center;
-    color: #555;
-    line-height: 1.6;
-    flex-grow: 1;
-}
-
-/* Footer */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Sticky Call Button */
-.sticky-call {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #c40000;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-/* Hide call button on desktop */
-@media (min-width: 768px) {
-    .sticky-call {
-        display: none;
-    }
-}
-
-/* Mobile adjustments */
-@media (max-width: 600px) {
-    .hero h2 {
-        font-size: 26px;
-    }
-    .card img {
-        height: 190px;
-    }
-}
-.map-actions {
-    text-align: center;
-    margin-top: 30px;
-}
+</body>
+</html>
