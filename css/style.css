@@ -158,3 +158,8 @@ footer {
         height: 190px;
     }
 }
+
+.center-btn {
+    text-align: center;
+    margin-top: 25px;
+}
