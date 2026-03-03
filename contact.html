@@ -1,74 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Us – Awadh Battery & Electronics Centre</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Awadh Battery & Electronics Centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Top Bar -->
-<div class="top-bar">
-    📞 +91 8130596101 | ⚡ Trusted Power Solutions
-</div>
-
-<!-- Navbar -->
-<header class="navbar">
-    <h1>Awadh Battery & Electronics Centre</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<!-- Contact Section -->
-<section class="section">
-    <h2>Find Us on Google Maps</h2>
-
-    <!-- Google Map -->
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps?q=Awadh+Battery+and+Electronics+Centre+Lucknow&output=embed"
-            width="100%"
-            height="350"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="logo-icon">⚡</span><div><div class="logo-name">Awadh Battery</div><div class="logo-sub">& Electronics Centre</div></div></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="tel:08065486292" class="nav-cta">📞 Call Now</a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
+  </nav>
 
-    <!-- Get Directions Button -->
-    <div class="map-actions">
-        <a 
-          href="https://www.google.com/maps/dir/?api=1&destination=Awadh+Battery+and+Electronics+Centre+Lucknow"
-          target="_blank">
-            📍 Get Directions
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="section-tag">Get In Touch</div>
+      <h1>Contact Us</h1>
+      <p>We're here to help — 7 days a week, 9 AM to 9 PM</p>
+    </div>
+  </section>
+
+  <section class="contact-page">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Visit Us or Get in Touch</h2>
+        <p>Whether you want to enquire about a product, need a quote, or want expert advice — reach out to us. We're always happy to help.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text"><h4>Phone</h4><a href="tel:08065486292">+91 80654 86292</a></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">💬</div>
+          <div class="contact-detail-text"><h4>WhatsApp</h4><a href="https://wa.me/918065486292" target="_blank">Chat with us on WhatsApp</a></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text"><h4>Address</h4><p>Vijay Khand, Ujariyaon, Vijay Khand 2,<br>Gomti Nagar, Lucknow, UP – 226010</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🕘</div>
+          <div class="contact-detail-text"><h4>Store Hours</h4><p>Monday – Sunday<br><strong>9:00 AM – 9:00 PM</strong></p></div>
+        </div>
+
+        <div class="map-embed">
+          <iframe src="https://maps.google.com/maps?q=Vijay+Khand+2+Gomti+Nagar+Lucknow&output=embed" width="100%" height="220" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="contact-form-box">
+        <h3>Send Us a Message</h3>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" id="name"/>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX" id="phone"/>
+        </div>
+        <div class="form-group">
+          <label>What are you looking for?</label>
+          <select id="inquiry">
+            <option value="">Select product / service</option>
+            <option>Car / Bike Battery</option>
+            <option>Inverter Battery</option>
+            <option>Solar Panel System</option>
+            <option>Inverter / UPS</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message (optional)</label>
+          <textarea rows="4" placeholder="Tell us about your requirement..." id="message"></textarea>
+        </div>
+        <button class="form-submit" onclick="sendWhatsApp()">Send via WhatsApp 💬</button>
+        <a href="https://wa.me/918065486292" target="_blank" class="whatsapp-contact">
+          💬 Or chat directly on WhatsApp
         </a>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 Awadh Battery and Electronics Centre</p>
-    <p>All Rights Reserved</p>
-</footer>
-
-<!-- Sticky Call Button (Mobile only) -->
-<a href="tel:+918130596101" class="sticky-call">
-    📞 Call Now
-</a>
-
-    <!-- WhatsApp Floating Button -->
-<a 
-  href="https://wa.me/918130596101?text=Hello%20Awadh%20Battery%20and%20Electronics%20Centre,%20I%20need%20information."
-  class="whatsapp-float"
-  target="_blank"
->
-    💬
-</a>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><div class="footer-logo">⚡ Awadh Battery</div><p>Your trusted partner for batteries, solar energy, and electronics in Lucknow.</p></div>
+      <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:08065486292">+91 80654 86292</a></p><p>📍 Vijay Khand 2, Gomti Nagar, Lucknow</p><p>🕘 Mon–Sun: 9 AM – 9 PM</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Awadh Battery & Electronics Centre. All rights reserved.</p></div>
+  </footer>
+  <a href="https://wa.me/918065486292" target="_blank" class="whatsapp-float">💬</a>
+  <script src="script.js"></script>
 </body>
 </html>
-
