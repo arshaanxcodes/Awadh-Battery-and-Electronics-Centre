@@ -33,5 +33,5 @@ function sendWhatsApp() {
   const message = document.getElementById('message')?.value || '';
   if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
   const text = `Hello Awadh Battery! 👋\n\nName: ${name}\nPhone: ${phone}\nLooking for: ${inquiry}\nMessage: ${message}`;
-  window.open(`https://wa.me/918065486292?text=${encodeURIComponent(text)}`, '_blank');
+  window.open(`https://wa.me/918130596101?text=${encodeURIComponent(text)}`, '_blank');
 }
