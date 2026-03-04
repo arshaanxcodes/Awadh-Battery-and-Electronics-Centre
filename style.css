@@ -120,7 +120,7 @@ img { max-width: 100%; }
 .stat-label { font-size: 0.75rem; color: #888; }
 .stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.1); }
 
-/* Hero Cards */
+/* ===== HERO CARDS ===== */
 .hero-visual { display: flex; align-items: center; justify-content: center; }
 .hero-card-stack {
   display: grid;
@@ -130,19 +130,21 @@ img { max-width: 100%; }
   max-width: 360px;
 }
 .hero-card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(245,197,24,0.2);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(245,197,24,0.3);
   border-radius: var(--radius);
   padding: 2rem 1rem;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   transition: transform 0.3s;
   backdrop-filter: blur(10px);
   aspect-ratio: 1;
 }
 .hero-card:hover { transform: translateY(-6px); }
 .card1, .card2, .card3, .card4 { position: static; width: auto; height: auto; }
-.card2 { border-color: rgba(245,197,24,0.4); background: rgba(245,197,24,0.05); }
+.card2 { border-color: rgba(245,197,24,0.5); background: rgba(245,197,24,0.08); }
+.card-icon { font-size: 2.5rem; line-height: 1; }
+.card-label { color: #ffffff; font-size: 0.95rem; font-weight: 600; text-align: center; }
 
 /* ===== BUTTONS ===== */
 .btn-primary {
@@ -480,9 +482,7 @@ img { max-width: 100%; }
 .footer-contact p { color: #666; font-size: 0.88rem; margin-bottom: 0.5rem; line-height: 1.5; }
 .footer-contact a { color: #666; transition: color 0.2s; }
 .footer-contact a:hover { color: var(--yellow); }
-.footer-bottom {
-  padding: 1.5rem 0; text-align: center;
-}
+.footer-bottom { padding: 1.5rem 0; text-align: center; }
 .footer-bottom p { color: #444; font-size: 0.82rem; }
 
 /* ===== WHATSAPP FLOAT ===== */
