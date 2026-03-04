@@ -524,3 +524,8 @@ img { max-width: 100%; }
   .hero-btns { flex-direction: column; }
   .cta-btns { flex-direction: column; }
 }
+.page-hero {
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('store.avif') center/cover no-repeat;
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+}
